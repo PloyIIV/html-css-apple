@@ -72,7 +72,7 @@ h1 {
 
 .mac-buy-now {
     background-color: #eeeeee;
-    width: fit-content;
+    width: auto;
     height: fit-content;
     display: flex;
     justify-content: space-between;
@@ -228,27 +228,56 @@ hr {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    /*  */
-}
+/* @media only screen and (max-width: 600px) {
+} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /*  */
-}
+/* @media only screen and (max-width: 600px) {
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    /*  */
+@media only screen and (max-width: 768px) {
+    .gallery-container {
+        flex-wrap: nowrap;
+        height: auto;
+        margin: 40px 0;
+    }
+    .apple-trade-in {
+        flex-direction: column;
+        width: 300px;
+    }
+    .apple-trade-in img {
+        width: fit-content;
+    }
+    hr {
+        margin: 20px 0;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .section-header {
+        flex-direction: column;
+        align-items: start;
+    }
+    .mac-buy-now {
+        width: 400px;
+        margin-top: 20px;
+    }
+    .mac-buy-now p {
+        width: 65%;
+    }
     .nav-list {
         display: none;
     }
     ul {
         justify-content: space-between;
+    }
+    .apple-trade-in {
+        width: min-content;
+    }
+    .apple-trade-in div {
+        width: 400px;
     }
 }
 
