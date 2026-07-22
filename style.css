@@ -59,6 +59,15 @@ section img {
     letter-spacing: -2px;
 }
 
+.text-gradient-rainbow {
+    background: linear-gradient(to right, #00a0f0, #00a0f0, #00a0f0, #862eeb, #f549de, #f04c00, #f04c00, #f04c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -5px;
+}
+
 .text-orange {
     color: rgb(211, 118, 11);
     font-weight: 700;
@@ -68,6 +77,12 @@ section img {
 h1 {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -2px;
 }
 
 .mac-buy-now {
@@ -105,6 +120,35 @@ h1 {
 
 span {
     cursor: pointer;
+}
+
+article {
+    text-align: center;
+    margin: 70px 0;
+}
+article p {
+    text-align: center;
+    width: 50%;
+    margin: 40px auto;
+    line-height: 20px;
+    font-weight: 600;
+    color: #888;
+}
+
+article a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #1476de;
+    margin-bottom: 70px;
+}
+
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article img {
+    height: 100%;
 }
 
 footer {
@@ -232,8 +276,8 @@ hr {
 } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (max-width: 600px) {
-} */
+@media only screen and (max-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -251,6 +295,12 @@ hr {
     }
     hr {
         margin: 20px 0;
+    }
+    .text-gradient-rainbow {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 2em;
     }
 }
 
@@ -279,9 +329,12 @@ hr {
     .apple-trade-in div {
         width: 400px;
     }
+    article img {
+        width:50%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    /*  */
-}
+/* @media only screen and (min-width: 1200px) {
+    
+} */
