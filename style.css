@@ -19,6 +19,11 @@ ul a {
     color: #000000;
 }
 
+.nav-list, .nav-list-special {
+    display: flex;
+    gap: 20px;
+}
+
 .limited-time {
     background-color: rgb(245, 245, 245);
     display: flex;
@@ -111,6 +116,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 footer header {
     margin: 100px 0 20px;
@@ -237,8 +243,13 @@ hr {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    /*  */
+@media only screen and (max-width: 992px) {
+    .nav-list {
+        display: none;
+    }
+    ul {
+        justify-content: space-between;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
