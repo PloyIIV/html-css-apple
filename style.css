@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 15px;
+    font-size: smaller;
+    text-align: center;
+    justify-content: center;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.limited-time {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: small;
+    text-align: center;
+}
+
+.limited-time a {
+    text-decoration: none;
+    color: rgb(46, 130, 255)
+}
+
+.section-header {
+    margin: 20px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section img {
+    width: 100%;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #000000, #00a0f0, #4ec4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.text-orange {
+    color: rgb(211, 118, 11);
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.mac-buy-now {
+    background-color: #eeeeee;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+.mac-buy-now p {
+    width: 50%;
+    margin-left: 20px;
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+.mac-buy-now span {
+    text-decoration: underline;
+}
+.mac-buy-now button {
+    padding: 20px 30px;
+    background-color: #1476de;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+}
+.mac-buy-now button:hover {
+    background-color: #2185ef;
+}
+
+span {
+    cursor: pointer;
+}
+
+footer {
+    background: #eee;
+    color: #777;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    border: 1px red solid;
+}
+
+footer h2 {
+    color: black;
+}
+
+footer span {
+    color: black;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    border: 1px solid red;
+}
+
+
+.gallery-item {
+    background-color: #fff;
+    height: fit-content;
+    width: 30%;
+    border: 1px green solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+.gallery-item .icon {
+    width: 50px;
+}
+
+.small-item {
+    height: 150px;
+}
+
+.big-item {
+    height: 250px;
+}
+
+/* @media (min-width: 600px) {
+    
+} */
